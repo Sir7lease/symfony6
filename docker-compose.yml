@@ -16,6 +16,7 @@ services:
 
   ###> doctrine/doctrine-bundle ###
   db:
+    container_name: "db_${PROJECT_NAME}"
     image: mysql:latest
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
